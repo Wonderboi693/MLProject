@@ -6,4 +6,5 @@ scikit-learn
 xgboost
 catboost
 matplotlib
+dill
 #-e .
