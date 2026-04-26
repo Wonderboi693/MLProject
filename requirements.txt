@@ -9,4 +9,5 @@ matplotlib
 dill
 flask
 gunicorn
+flask-cors
 #-e .
