@@ -131,3 +131,58 @@ input, select, button {
 .animate-fade-in {
   animation: fadeIn 0.4s ease-out forwards;
 }
+
+/* ===== Premium Enhancements ===== */
+.glass-panel {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-panel:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
+}
+
+/* ===== Responsive Design System ===== */
+
+/* Tablet & Smaller Desktop */
+@media (max-width: 1024px) {
+  h1 { font-size: 2.2rem; }
+  .container { padding: 1.5rem; }
+}
+
+/* Mobile (Large & Small) */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  
+  .container {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .glass-panel {
+    padding: 1.5rem !important;
+  }
+
+  .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Hide text in nav for very small screens if needed, 
+     or handle via Hamburger in component */
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
+  
+  .glass-nav {
+    padding: 0.75rem 1rem !important;
+  }
+}
+
